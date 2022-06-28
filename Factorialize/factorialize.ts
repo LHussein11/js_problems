@@ -1,3 +1,7 @@
 export function factorialize (num: number): number {
-    throw new Error('Function is not implemented.');
+    let sum = 1;
+    for(let i = 1; i <= num; i++) {
+        sum *= i;
+    }
+    return sum;
 }
