@@ -1,3 +1,9 @@
 export function addUpDigits(num: number): number {
-    throw new Error('Function is not implemented.');
+    const numString = num.toString();
+    let sum = 0;
+
+    for(let i:number = 0; i < numString.length; i++) {
+        sum += parseInt(numString.charAt(i))
+    }
+    return sum;
 }

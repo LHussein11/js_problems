@@ -1,3 +1,3 @@
 export function amendSentence (str: string): string {
-    throw new Error('Function is not implemented.');
+    return str.match(/[A-Z][a-z']+/g).join(' ').toLowerCase();
 }

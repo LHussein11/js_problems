@@ -1,3 +1,9 @@
 export function filterList(list: any[]): any[] {
-    throw new Error('Function is not implemented.');
+    const listWithoutString = [];
+    list.forEach(item => {
+        if(typeof item !== 'string'){
+            listWithoutString.push(item)
+        }
+    })
+    return listWithoutString; 
 }

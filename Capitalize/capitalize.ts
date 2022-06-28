@@ -1,3 +1,3 @@
 export function capitalize(str: string): string {
-    throw new Error('Function is not implemented.');
+    return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 }

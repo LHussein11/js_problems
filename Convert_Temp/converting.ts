@@ -1,3 +1,3 @@
 export function convertToFahrenheit(celsius: number): number {
-    throw new Error('Function is not implemented.');
+    return celsius * (9/5) + 32;
 }
